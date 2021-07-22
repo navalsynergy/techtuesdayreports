@@ -2,12 +2,20 @@ import React,{useState} from 'react'
 import axios from 'axios';
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 import Loader from 'react-loaders'
+import { useHistory } from "react-router-dom";
 
 
 const UploadFile = () =>{
     
     const [newFile, SetNewFile] = useState([]); 
     let loader = <Loader type="ball-scale-ripple-multiple" />
+
+    const history = useHistory();
+    const clickHandler = () => {
+      let path = `result`; 
+      history.push(path);
+
+    }
     
     const fileChange = (event) => {
         SetNewFile( event.target.files[0] );
@@ -42,7 +50,8 @@ const UploadFile = () =>{
             accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
             />
         </Form.Field>
-          <Button type="submit" color='teal' fluid size='large'>
+          {/* <Button type="submit" color='teal' fluid size='large'> */}
+          <Button onClick={clickHandler} color='teal' fluid size='large'>
             Upload
           </Button>
         </Segment>
