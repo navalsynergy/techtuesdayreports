@@ -33,9 +33,7 @@ const data = {
 
     return(
         <div>
-        <Pie data={data} />        
-        <Pie data={data} />        
-        <Pie data={data} />        
+        <Pie data={data} width={100} height={100}/>                 
         </div>
     )
 }
