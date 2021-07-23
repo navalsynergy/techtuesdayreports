@@ -32,8 +32,23 @@ const data = {
 
 
     return(
-        <div>
-        <Pie data={data} width={100} height={100}/>                 
+<div class="piechartbackground" >
+<div class="ui grid">
+   <div class="four wide computer sixteen wide mobile eight wide tablet column">
+      <div class="ui segment">        <Pie data={data} width={100} height={100}/>  </div>
+   </div>
+   <div class="four wide computer sixteen wide mobile eight wide tablet column">
+      <div class="ui segment">        <Pie data={data} width={100} height={100}/>  </div>
+   </div>
+   <div class="four wide computer sixteen wide mobile eight wide tablet column">
+      <div class="ui segment">        <Pie data={data} width={100} height={100}/>  </div>
+   </div>
+   <div class="four wide computer sixteen wide mobile eight wide tablet column">
+      <div class="ui segment">        <Pie data={data} width={100} height={100}/>  </div>
+   </div>
+
+                         
+        </div>
         </div>
     )
 }
