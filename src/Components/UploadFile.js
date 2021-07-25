@@ -8,28 +8,51 @@ import { useHistory } from "react-router-dom";
 const UploadFile = () =>{
     
     const [newFile, SetNewFile] = useState([]); 
+    const [resultData, SetResultData] = useState([{"hello":"1"}]); 
+    const [redirect, SetRedirect] = useState(false); 
+    const history = useHistory();
     let loader = <Loader type="ball-scale-ripple-multiple" />
 
-    const history = useHistory();
     const clickHandler = () => {
-      let path = `result`; 
-      history.push(path);
+      
+      SetResultData([{"content_rating_score":{"excellent":8,"fair":1,"good":3,"poor":0,"very_good":6},"overall_rating_score":{"excellent":8,"fair":0,"good":3,"poor":0,"very_good":7},"overall_sentiment_score":{"negative":1,"neutral":0,"positive":17},"presenting_skills_rating_score":{"excellent":9,"fair":0,"good":2,"poor":0,"very_good":7},"total_reviews":18}])
+      SetRedirect(true)
+        // setTimeout(function(){
+        //   history.push({
+        //     pathname:'/result',
+        //     state:resultData
+        //   })
+        // },10000)
+    // let formData= new FormData();
+    // formData.append("file", newFile);
+    // axios.post('https://ttr-reports-generator.herokuapp.com/api/upload_csv_file', formData, {
+    //    headers: {
+    //    "Access-Control-Allow-Origin": "*",
+    //   },
+    // })
+    // .then((response)=>{
+    //   console.log(response);
+    // })
+    // .catch((err=>{
+    //   console.log(err)
+    // }))
 
     }
     
+    const clickHandler2 =  ()=>{
+      history.push({
+      pathname:'/result',
+      state:resultData
+    })
+  }
+
+
     const fileChange = (event) => {
         SetNewFile( event.target.files[0] );
      };
 
     const onFormSubmit = () =>{
     console.log(newFile);
-    // let formData;
-    // formData.append("file", newFile);
-    // axios.post('upload_file', formData, {
-    //    headers: {
-    //    'Content-Type': 'multipart/form-data'
-    //   }
-    // });
     }
 
     return(
@@ -53,6 +76,10 @@ const UploadFile = () =>{
           {/* <Button type="submit" color='teal' fluid size='large'> */}
           <Button onClick={clickHandler} color='teal' fluid size='large'>
             Upload
+          </Button>
+          <br/>
+          <Button onClick={clickHandler2} color='teal' fluid size='large' disabled={!redirect}>
+            Generate Result
           </Button>
         </Segment>
       </Form>
