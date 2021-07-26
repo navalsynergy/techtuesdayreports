@@ -13,6 +13,16 @@
     margin-top: 25vh;
 }
 
+.Tlabel{
+    text-align: center;
+}
+
+.TlabelA{
+    color:#00b5ad;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
 @media only screen and (max-width: 1200px){
     .piechartbackground{
         margin-top: 25vh;
