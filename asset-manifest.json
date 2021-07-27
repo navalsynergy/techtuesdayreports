@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.40380393.chunk.css",
-    "main.js": "/my-app/static/js/main.1881afbd.chunk.js",
-    "main.js.map": "/my-app/static/js/main.1881afbd.chunk.js.map",
-    "runtime-main.js": "/my-app/static/js/runtime-main.b4d2b0c5.js",
-    "runtime-main.js.map": "/my-app/static/js/runtime-main.b4d2b0c5.js.map",
-    "static/css/2.3e73bb84.chunk.css": "/my-app/static/css/2.3e73bb84.chunk.css",
-    "static/js/2.4f5d8f28.chunk.js": "/my-app/static/js/2.4f5d8f28.chunk.js",
-    "static/js/2.4f5d8f28.chunk.js.map": "/my-app/static/js/2.4f5d8f28.chunk.js.map",
-    "index.html": "/my-app/index.html",
-    "static/css/2.3e73bb84.chunk.css.map": "/my-app/static/css/2.3e73bb84.chunk.css.map",
-    "static/css/main.40380393.chunk.css.map": "/my-app/static/css/main.40380393.chunk.css.map",
-    "static/js/2.4f5d8f28.chunk.js.LICENSE.txt": "/my-app/static/js/2.4f5d8f28.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/my-app/static/media/outline-icons.ddae9b1b.woff"
+    "main.css": "/techtuesdayreports/static/css/main.40380393.chunk.css",
+    "main.js": "/techtuesdayreports/static/js/main.1881afbd.chunk.js",
+    "main.js.map": "/techtuesdayreports/static/js/main.1881afbd.chunk.js.map",
+    "runtime-main.js": "/techtuesdayreports/static/js/runtime-main.c0ec994e.js",
+    "runtime-main.js.map": "/techtuesdayreports/static/js/runtime-main.c0ec994e.js.map",
+    "static/css/2.bf9c6092.chunk.css": "/techtuesdayreports/static/css/2.bf9c6092.chunk.css",
+    "static/js/2.4f5d8f28.chunk.js": "/techtuesdayreports/static/js/2.4f5d8f28.chunk.js",
+    "static/js/2.4f5d8f28.chunk.js.map": "/techtuesdayreports/static/js/2.4f5d8f28.chunk.js.map",
+    "index.html": "/techtuesdayreports/index.html",
+    "static/css/2.bf9c6092.chunk.css.map": "/techtuesdayreports/static/css/2.bf9c6092.chunk.css.map",
+    "static/css/main.40380393.chunk.css.map": "/techtuesdayreports/static/css/main.40380393.chunk.css.map",
+    "static/js/2.4f5d8f28.chunk.js.LICENSE.txt": "/techtuesdayreports/static/js/2.4f5d8f28.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/techtuesdayreports/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.b4d2b0c5.js",
-    "static/css/2.3e73bb84.chunk.css",
+    "static/js/runtime-main.c0ec994e.js",
+    "static/css/2.bf9c6092.chunk.css",
     "static/js/2.4f5d8f28.chunk.js",
     "static/css/main.40380393.chunk.css",
     "static/js/main.1881afbd.chunk.js"
